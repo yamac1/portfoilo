@@ -1,0 +1,157 @@
+:root{
+    --grey : #51555B;
+    --dark-blue: #223C60;
+    --light-blue: #446FA0;
+    --white: #D6DDE0;
+}
+
+html{
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* Renkler-- */
+
+.bg-color-white{
+    background-color: var(--white);
+}
+
+.bg-color-dark-blue{
+    background-color: var(--dark-blue);
+}
+
+/* scroll için-- */
+nav.bg-color-dark-blue{
+    background-color: rgba(33, 59, 94,0.7) !important;
+    transition: .75s ease;
+}
+
+nav.bg-color-dark-blue.scrolled{
+    background-color: rgba(33, 59, 94,0.4) !important;
+    transition: .75s ease;
+}
+/* --scroll için */
+.bg-color-light-blue{
+    background-color: var(--light-blue);
+}
+
+.bg-color-grey{
+    background-color: var(--grey);
+}
+
+.color-white{
+    color: var(--white);
+}
+
+.color-dark-blue{
+    color: var(--dark-blue);
+}
+
+.color-light-blue{
+    color: var(--light-blue);
+}
+
+.color-grey{
+    color: var(--grey);
+}
+
+/* --Renkler */
+
+nav div ul li a{
+    border-radius: 5px;
+    color: var(--white) !important;
+    text-align: center;
+    font-size: 2vw;
+    transition: background-color .75s;
+}
+
+nav div ul li a:hover{
+    background-color: #1e3557;
+}
+
+#navbarSupport{
+    transition: .75s ease;
+}
+
+.centered{
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+}
+
+/* .show{
+    background-color: transparent;
+} */
+
+
+/* toggle button için */
+.navbar-toggler span {
+    display: block;
+    background-color: var(--white);
+    height: 3px;
+    width: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    left: 0;
+    opacity: 1;
+    transition: all 0.2s ease-out;
+    transform-origin: center left;
+}
+
+.navbar-toggler span:nth-child(1) {
+    margin-top: 0.3em;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+    transform: translate(15%, -33%) rotate(45deg);
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+    transform: translate(15%, 33%) rotate(-45deg) ;
+}
+
+.navbar-toggler span:nth-child(1) {
+    transform: translate(0%, 0%) rotate(0deg) ;
+}
+
+.navbar-toggler span:nth-child(2) {
+    opacity: 1;
+}
+
+.navbar-toggler span:nth-child(3) {
+    transform: translate(0%, 0%) rotate(0deg) ;
+}
+
+/* toggle button için */
+
+#home .animated{
+    animation-name: homeAnimation;
+    animation-duration: 2.5s;  
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+@keyframes homeAnimation {
+    from {
+        top: 60%;
+        color: transparent;
+        text-shadow: none;
+    }
+    to {
+        top: 30%;
+        left: 50%;
+        width: 80%;
+        transform: translate(-50%, -50%);
+        transition: 2.5s ease-out;
+    }
+  }

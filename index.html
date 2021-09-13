@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="Portfolio">
+    <meta name="author" content="Çamay Duran">
+    <meta name="author" content="İhsan Güldür">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--css-->
+    <link rel="stylesheet" href="main.css">
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portföy</title>
+</head>
+
+<body class="bg-color-white">
+
+    <!-- üstünde ilk deneme yaptığım navbar. 
+        <nav class="nav nav-pills flex-column flex-sm-row justify-content-end fixed-top bg-color-dark-blue">
+            <a class="nav-brand" href="#home">Site Adı</a>
+            <a class="px-5 text-sm-center nav-link" href="#home">Ana Sayfa</a>
+            <a class="px-5 text-sm-center nav-link" href="#about">Hakkında</a>
+            <a class="px-5 text-sm-center nav-link" href="#projects">Projeler</a>
+            <a class="px-5 text-sm-center nav-link" href="#contact">İletişim</a>
+          </nav> -->
+    <header>
+        <!-- asıl olan 
+            
+            <nav class="navbar nav-pills navbar-expand-md navbar-dark bg-color-dark-blue fixed-top">
+            <a class="navbar-brand text-white" href="#home"><i class="fab fa-angrycreative"
+                    style="font-size:3.5vw; margin-left:40%;"></i></a>
+            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupport"
+                aria-controls="navbarSupport" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupport" style="text-shadow: .5px .5px 3px black;">
+                <ul class="navbar-nav ml-auto">
+                    <li class="px-4 nav-item">
+                        <a class="nav-link " href="#home">Ana Sayfa</a>
+                    </li>
+                    <li class="px-4 nav-item">
+                        <a class="nav-link" href="#about">Hakkında</a>
+                    </li>
+                    <li class="px-4 nav-item">
+                        <a class="nav-link" href="#projects">Projeler</a>
+                    </li>
+                    <li class="px-4 nav-item">
+                        <a class="nav-link" href="#contact">İletişim</a>
+                    </li>
+                </ul>
+            </div>
+        </nav> -->
+        <nav class="navbar nav-pills navbar-expand-md navbar-dark bg-color-dark-blue fixed-top">
+            <a class="navbar-brand text-white" href="#home"><i class="fab fa-angrycreative"
+                    style="font-size:3.5vw; margin-left:40%;"></i></a>
+            <a class="navbar-toggler collapsed border-0" type="button" data-toggle="collapse"
+                data-target="#navbarSupport">
+                <span> </span>
+                <span> </span>
+                <span> </span>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupport" style="text-shadow: .5px .5px 3px black;">
+                <ul class="navbar-nav ml-auto">
+                    <li class="px-4 nav-item">
+                        <a class="nav-link" href="#home">Ana Sayfa</a>
+                    </li>
+                    <li class="px-4 nav-item">
+                        <a class="nav-link" href="#about">Hakkında</a>
+                    </li>
+                    <li class="px-4 nav-item">
+                        <a class="nav-link" href="#projects">Projeler</a>
+                    </li>
+                    <li class="px-4 nav-item">
+                        <a class="nav-link" href="#contact">İletişim</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="position-relative text-center " style="color:var(--white); text-shadow: 2px 2px 10px black;">
+            <img src="./images/manzara.jpg" class="img-fluid" alt="manzara">
+            <div class="position-absolute centered animated">
+                <div class="position-absolute centered" style="font-size: 10vw; letter-spacing: 5px;">
+                    Jane Doe
+                    <div class="position-absolute" style="font-size:2.5vw; letter-spacing: 2px;">Lorem, ipsum dolor sit amet
+                        consectetur adipisicing elit.
+                        Aut, non ipsam. Labore quo tempora consectetur, eveniet aliquam doloribus odit ad quasi deserunt at
+                        assumenda dolor.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="about">
+        <img src="./images/manzara.jpg" class="img-fluid" alt="manzara">
+    </section>
+    <section id="projects">
+        <img src="./images/manzara.jpg" class="img-fluid" alt="manzara">
+    </section>
+    <section id="contact">
+        <img src="./images/manzara.jpg" class="img-fluid" alt="manzara">
+    </section>
+
+    <footer>
+        <div class="container-fluid bg-color-dark-blue text-center color-white">
+            FOOTER
+        </div>
+    </footer>
+
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script>
+        $(window).scroll(function () {
+            $('nav').toggleClass('scrolled', $(this).scrollTop() > 10);
+        });
+    </script>
+</body>
+
+</html>
