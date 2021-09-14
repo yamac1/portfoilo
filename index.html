@@ -16,12 +16,16 @@
     <!--font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
     <!-- font awsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portföy</title>
+
+    <!-- AOS LIB -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body class="bg-color-white">
@@ -33,8 +37,8 @@
             <a class="px-5 text-sm-center nav-link" href="#projects">Projeler</a>
             <a class="px-5 text-sm-center nav-link" href="#contact">İletişim</a>
           </nav> -->
-    <header>
-        <!-- asıl olan 
+
+    <!-- asıl olan 
             
             <nav class="navbar nav-pills navbar-expand-md navbar-dark bg-color-dark-blue fixed-top">
             <a class="navbar-brand text-white" href="#home"><i class="fab fa-angrycreative"
@@ -60,7 +64,9 @@
                 </ul>
             </div>
         </nav> -->
-        
+    <header>
+
+
         <nav class="navbar nav-pills navbar-expand-md navbar-dark bg-color-dark-blue fixed-top">
             <a class="navbar-brand text-white" href="#home"><i class="fab fa-angrycreative"
                     style="font-size:3.5vw; margin-left:40%;"></i></a>
@@ -79,7 +85,7 @@
                         <a class="nav-link" href="#about">Hakkında</a>
                     </li>
                     <li class="px-4 nav-item">
-                        <a class="nav-link" href="#projects">Projeler</a>
+                        <a class="nav-link" href="#blog">Blog</a>
                     </li>
                     <li class="px-4 nav-item">
                         <a class="nav-link" href="#contact">İletişim</a>
@@ -90,55 +96,115 @@
     </header>
 
     <section id="home">
-        <div class="position-relative text-center " style="color:var(--white); text-shadow: 2px 2px 10px black;">
+        <div class="position-relative text-center" style="color:var(--white); text-shadow: 2px 2px 10px black;">
             <img src="./images/manzara.jpg" class="img-fluid" alt="manzara">
             <div class="position-absolute centered animated">
-                <div class="position-absolute centered" style="font-size: 10vw; letter-spacing: 5px;">
+                <div class="position-absolute centered " style="font-size: 10vw; letter-spacing: 5px;">
                     Jane Doe
-                    <div class="position-absolute" style="font-size:2.5vw; letter-spacing: 2px;">Lorem, ipsum dolor sit amet
-                        consectetur adipisicing elit.
-                        Aut, non ipsam. Labore quo tempora consectetur, eveniet aliquam doloribus odit ad quasi deserunt at
-                        assumenda dolor.
+                    <div class="position-absolute" style="font-size:2.5vw; letter-spacing: 2px;">I am professional
+                        photographer who have a passion on taking
+                        photos of deep forest, mountains, out doors, etc.
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
+
     <section id="about">
-        <img src="./images/manzara.jpg" class="img-fluid" alt="manzara">
+        <div style="height: 4.5vw;"></div>
+        <div class="bordered-section bg-color-white text-center color-dark-blue py-2 "
+            style="font-size: 3vw; letter-spacing: .75rem;">
+            <p>HAKKINDA</p>
+        </div>
+        <div class="container pb-5" style="height:fit-content">
+            <div class="row">
+                <div id="aboutText" data-aos="fade-right" class="col-sm-12 col-md-5 mr-md-5"
+                    style="padding:10px 30px; border-radius: 10px; line-height: 1.5; letter-spacing: .10rem;">
+                    <p style="text-indent: 3vw;">I am <strong>jane Doe</strong>, a travel photographer and writer who believes that images
+                        and words have the power to inspire meaningful change. My photos of the great outdoors spark
+                        curiosity and my social media channels and blog create a space for connection with people of
+                        similar passions to this world and each other.
+                    </p>
+                    <br><br>
+                    <p style="text-indent: 3vw;">I am a <strong>Sony Alpha Ambassador</strong> based out of Los Angeles – but you’d be hard pressed to find me
+                        sharing the incredible diversity that exists on our planet, and the connection each one of us
+                        has to it and to each other.
+                    </p>
+                </div>
+                <div data-aos="fade-left" class="card col-sm-12 col-md-5 ml-md-5 bg-color-white border-0"
+                    style="padding: 10px 30px;">
+                    <img class="card-img-top" style="border-radius: 50%;" src="./images/jane_doe.jpg" alt="jane doe">
+                    <div class="card-body">
+                        <h1 class="card-title text-center"
+                            style="font-family: 'Dancing Script', cursive; font-weight: 700;"> Jane Doe</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="projects">
-        <img src="./images/manzara.jpg" class="img-fluid" alt="manzara">
+
+    <section id="blog">
+    
     </section>
+
     <section id="contact">
-        <img src="./images/manzara.jpg" class="img-fluid" alt="manzara">
     </section>
 
     <footer>
-        <div class="container-fluid bg-color-dark-blue text-center color-white">
+        <div class="container-fluid bg-color-dark-blue text-center color-white fixed-bottom">
             FOOTER
         </div>
     </footer>
 
 
     <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <!-- Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- navigation transparent -->
     <script>
         $(window).scroll(function () {
             $('nav').toggleClass('scrolled', $(this).scrollTop() > 10);
+        });
+    </script>
+
+    <!-- scroll animasyonu -->
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
         });
     </script>
 </body>
