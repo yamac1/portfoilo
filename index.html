@@ -16,6 +16,8 @@
     <!--font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
     <!-- font awsome -->
@@ -110,9 +112,9 @@
         </div>
     </section>
 
-    <section id="about">
+    <section id="about" class="bg-color-white">
         <div style="height: 4.5vw;"></div>
-        <div class="bordered-section bg-color-white text-center color-dark-blue py-2 "
+        <div class="bordered-section  text-center color-dark-blue py-2 "
             style="font-size: 3vw; letter-spacing: .75rem;">
             <p>HAKKINDA</p>
         </div>
@@ -120,13 +122,15 @@
             <div class="row">
                 <div id="aboutText" data-aos="fade-right" class="col-sm-12 col-md-5 mr-md-5"
                     style="padding:10px 30px; border-radius: 10px; line-height: 1.5; letter-spacing: .10rem;">
-                    <p style="text-indent: 3vw;">I am <strong>jane Doe</strong>, a travel photographer and writer who believes that images
+                    <p style="text-indent: 3vw;">I am <strong>jane Doe</strong>, a travel photographer and writer who
+                        believes that images
                         and words have the power to inspire meaningful change. My photos of the great outdoors spark
                         curiosity and my social media channels and blog create a space for connection with people of
                         similar passions to this world and each other.
                     </p>
                     <br><br>
-                    <p style="text-indent: 3vw;">I am a <strong>Sony Alpha Ambassador</strong> based out of Los Angeles – but you’d be hard pressed to find me
+                    <p style="text-indent: 3vw;">I am a <strong>Sony Alpha Ambassador</strong> based out of Los Angeles
+                        – but you’d be hard pressed to find me
                         sharing the incredible diversity that exists on our planet, and the connection each one of us
                         has to it and to each other.
                     </p>
@@ -144,19 +148,58 @@
     </section>
 
     <section id="blog">
-    
+        <div style="height: 1000px;" class="bg-color-white"> </div>
     </section>
 
     <section id="contact">
-    </section>
+       
+           
+        <div id="form-wrap">
+            <form>
+                <p>HELLO JANE,</p>
+                <label for="email">Your Message:</label>
+                <textarea name="message" id="message" value="Your Message"></textarea>
 
-    <footer>
-        <div class="container-fluid bg-color-dark-blue text-center color-white fixed-bottom">
-            FOOTER
+                <label for="name">Name:</label>
+                <input type="text" name="name" value="" id="name">
+
+                 <label for="email">Email:</label>
+                 <input type="text" name="email" value="" id="email">
+                 <input type="submit" name="submit" value="NOW, I SEND THANKS!">
+
+            </form>
+        </div>
+        <div id="form-wrap2">            
+                <ul>
+                <p>HELLO JANE,</p>
+                <li><label for="email">Your Message:</label></li>
+                <textarea name="message" id="message" value="Your Message"></textarea>
+        
+                <li><label for="name">Name:</label></li>
+                <input type="text" name="name" value="" id="name">
+
+        
+                <li><label for="email">Email:</label></li>
+                <input type="text" name="email" value="" id="email">
+                <input type="submit" name="submit" value="NOW, I SEND THANKS!">
+                </ul>
+        </div>
+        
+    </section>
+    
+    <footer class="footer">
+        <div class="inner-footer">
+            <div class="social-links">
+               
+                <ul>
+                    <li class="social-items"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li class="social-items"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li class="social-items"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li class="social-items"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
         </div>
     </footer>
-
-
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
