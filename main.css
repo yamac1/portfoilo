@@ -195,10 +195,14 @@ nav div ul li a:hover{
 /* section border */
 
 .bordered-section{
-    width: fit-content;
-    height: fit-content;
     margin: 50px auto;
-    border-bottom: 1px solid var(--dark-blue);
+    background-image: linear-gradient(to right, var(--dark-blue),var(--light-blue));
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 50% 2px;
+    font-size: 3vw;
+    letter-spacing: .75rem;
+    font-weight: 600;
 }
 
 /* section border */ 
@@ -246,3 +250,20 @@ nav div ul li a:hover{
     opacity: 1;
   }
 /* image gallery */
+
+/* single html bunlar düzenlenecek global color single index vs olarak*/
+
+#goBackNav{
+    background-color: transparent !important;
+}
+
+#goBackNav a i{
+    transition: .6s ease-out;
+
+}
+
+#goBackNav a i:hover{
+    color: rgba(0, 0, 0,0.4);
+}
+
+/* single html/*
