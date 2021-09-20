@@ -195,10 +195,14 @@ nav div ul li a:hover{
 /* section border */
 
 .bordered-section{
-    width: fit-content;
-    height: fit-content;
-    margin: 50px auto;
-    border-bottom: 1px solid var(--dark-blue);
+   margin: 50px auto;
+    background-image: linear-gradient(to right, var(--dark-blue),var(--light-blue));
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 50% 2px;
+    font-size: 3vw;
+    letter-spacing: .75rem;
+    font-weight: 600;
 }
 
 /* section border */ 
@@ -245,4 +249,165 @@ nav div ul li a:hover{
   .container .row .flex-column a .position-relative:hover .overlay{
     opacity: 1;
   }
-/* image gallery */
+/* Contact */
+/* hr{
+    width: 80%;
+     background-color: #fff; 
+} */
+ 
+ #contact P{
+     font-size: 24px;
+ }
+ #contact{
+     width: 530px;
+     margin: 20px auto 0;
+     height: 1000px;
+ }
+ #form-wrap{
+     overflow: hidden;
+     height: 447px;
+     /* position: relative; */
+     top: 0px;
+     transition: all ls ease-in-out .3s;
+ }
+
+ #form-wrap:before{
+     content: "";
+     position: absolute;
+     bottom: 128px;
+     left: 0px;
+     background: url('images/before.png');
+     width: 530px;
+     height: 317px;
+ }
+
+ #form-wrap:after{
+    content:"";
+    position: absolute;
+    bottom:0px ; 
+    left: 0;
+    background: url(images/after.png);
+    width: 530px;
+    height: 259px;
+ }
+
+ #form-wrap.hide:after,
+ #form-wrap.hide:before{
+     display: none;
+ }
+
+ #form-wrap:hover{
+     height:777px;
+     top: -200px;
+ }
+ #form-wrap form{
+     /* background: white; */
+     /* position: relative; */
+     top: 200px;
+     /* overflow: hidden; */
+     height: 200px;
+     width: 400px;
+     margin: 0px auto;
+     padding: 20px;
+     border: 1px solid white;
+     border-right: 3px;
+     transition: all ls ease-in-out .3s;
+ }
+ #form-wrap2 form{
+     width: 100%;
+ }
+ #form-wrap:hover form{
+     height: 530px;
+ }
+ #form-wrap label{
+      margin: 11px 20px 0 0;
+      font-size: 13px;
+      color:black;
+      text-transform: uppercase;
+  }
+  
+  input[type=text],textarea{
+      font: 12px normal uppercase, arial, serif;
+      color: dimgray;
+      background: none;
+      width: 100%;
+      height: 35px;
+      padding: 0px 10px;
+      margin: 0 0 10px 0;
+      border: 1px solid #f8f5f1;
+      border-radius: 5px;
+  }
+  textarea{
+      height: 50px;
+      padding-top: 12px;
+      resize: none !important;
+
+  }
+  textarea:focus,
+  input[type=text]:focus{
+      background: white;
+  }
+ #form-wrap input[type=submit]{
+     position: relative;
+     font-family: tahoma;
+     font-size: 24px;
+     color: gray;
+     width: 100%;
+     text-align: center;
+     opacity: 0;
+     background: none;
+     cursor: pointer;
+     border-radius: 3px;
+     transition: opacity 0.7s ease-in-out 0s;
+ }
+
+#form-wrap:hover input[type=submit]{
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out 1.3s;
+}
+
+
+@media screen and (max-width: 600px) {
+    #contact{
+        width: 100% !important;
+       }
+    #form-wrap{
+        visibility: hidden;
+    }
+    #form-wrap2{
+        background-color:var(--dark-blue);
+    }
+}
+@media screen and (min-width: 600px) {
+       
+    #form-wrap2{
+        visibility: hidden;
+    }
+    #form-wrap{
+        
+    }
+}
+
+/*footer*/
+
+.footer_width {
+    background-color: var(--dark-blue);
+}
+
+
+/* single html bunlar düzenlenecek global color single index vs olarak/ */
+ 
+#goBackNav{
+    background-color: transparent !important;
+}
+
+#goBackNav a i{
+    transition: .6s ease-out;
+
+}
+
+#goBackNav a i:hover{
+    color: rgba(0, 0, 0,0.4);
+}
+
