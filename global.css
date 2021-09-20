@@ -1,0 +1,50 @@
+:root{
+    --grey : #51555B;
+    --dark-blue: #223C60;
+    --light-blue: #446FA0;
+    --white: #D6DDE0;
+}
+
+html{
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* Renkler-- */
+
+.bg-color-white{
+    background-color: var(--white);
+}
+
+.bg-color-dark-blue{
+    background-color: var(--dark-blue);
+}
+
+.bg-color-light-blue{
+    background-color: var(--light-blue);
+}
+
+.bg-color-grey{
+    background-color: var(--grey);
+}
+
+.color-white{
+    color: var(--white);
+}
+
+.color-dark-blue{
+    color: var(--dark-blue);
+}
+
+.color-light-blue{
+    color: var(--light-blue);
+}
+
+.color-grey{
+    color: var(--grey);
+}

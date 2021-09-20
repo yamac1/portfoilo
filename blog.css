@@ -1,0 +1,12 @@
+#goBackNav{
+    background-color: transparent !important;
+}
+
+#goBackNav a i{
+    transition: .6s ease-out;
+
+}
+
+#goBackNav a i:hover{
+    color: rgba(0, 0, 0,0.4);
+}

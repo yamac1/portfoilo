@@ -1,31 +1,4 @@
-:root{
-    --grey : #51555B;
-    --dark-blue: #223C60;
-    --light-blue: #446FA0;
-    --white: #D6DDE0;
-}
-
-html{
-    font-family: 'Open Sans', sans-serif;
-    scroll-behavior: smooth;
-}
-
-body{
-    margin: 0;
-    padding: 0;
-}
-
-/* Renkler-- */
-
-.bg-color-white{
-    background-color: var(--white);
-}
-
-.bg-color-dark-blue{
-    background-color: var(--dark-blue);
-}
-
-/* scroll için-- */
+/* --scroll için */
 nav{
     background-color: rgba(33, 59, 94,0.7) !important;
     transition: .75s ease;
@@ -36,31 +9,6 @@ nav.scrolled{
     transition: .75s ease;
 }
 /* --scroll için */
-.bg-color-light-blue{
-    background-color: var(--light-blue);
-}
-
-.bg-color-grey{
-    background-color: var(--grey);
-}
-
-.color-white{
-    color: var(--white);
-}
-
-.color-dark-blue{
-    color: var(--dark-blue);
-}
-
-.color-light-blue{
-    color: var(--light-blue);
-}
-
-.color-grey{
-    color: var(--grey);
-}
-
-/* --Renkler */
 
 /* Media Query */
 @media screen and (min-width: 1200px){
@@ -250,10 +198,6 @@ nav div ul li a:hover{
     opacity: 1;
   }
 /* Contact */
-/* hr{
-    width: 80%;
-     background-color: #fff; 
-} */
  
  #contact P{
      font-size: 24px;
@@ -266,7 +210,6 @@ nav div ul li a:hover{
  #form-wrap{
      overflow: hidden;
      height: 447px;
-     /* position: relative; */
      top: 0px;
      transition: all ls ease-in-out .3s;
  }
@@ -301,10 +244,7 @@ nav div ul li a:hover{
      top: -200px;
  }
  #form-wrap form{
-     /* background: white; */
-     /* position: relative; */
      top: 200px;
-     /* overflow: hidden; */
      height: 200px;
      width: 400px;
      margin: 0px auto;
@@ -385,7 +325,7 @@ nav div ul li a:hover{
         visibility: hidden;
     }
     #form-wrap{
-        
+        background-color: var(--white);
     }
 }
 
@@ -395,18 +335,4 @@ nav div ul li a:hover{
     background-color: var(--dark-blue);
 }
 
-
-/* single html bunlar düzenlenecek global color single index vs olarak/ */
- 
-#goBackNav{
-    background-color: transparent !important;
-}
-
-#goBackNav a i{
-    transition: .6s ease-out;
-
-}
-
-#goBackNav a i:hover{
-    color: rgba(0, 0, 0,0.4);
-}
+/*footer*/
