@@ -268,7 +268,7 @@ nav div ul li a:hover{
      height: 447px;
      /* position: relative; */
      top: 0px;
-     transition: all ls ease-in-out .3s;
+     transition: all 2s ease-in-out .3s;
  }
 
  #form-wrap:before{
@@ -371,6 +371,7 @@ nav div ul li a:hover{
 @media screen and (max-width: 600px) {
     #contact{
         width: 100% !important;
+        
        }
     #form-wrap{
         visibility: hidden;
@@ -385,17 +386,111 @@ nav div ul li a:hover{
         visibility: hidden;
     }
     #form-wrap{
-        
+        /* background-color:var(--dark-blue); */
+         visibility: visible;
     }
 }
 
 /*footer*/
 
-.footer_width {
+footer {
     background-color: var(--dark-blue);
+    color: #fff;
+}
+.footer_info{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    padding: 50px 0;
 }
 
+.footer_info .footer_width{
+    padding: 0 15px;
+}
+.footer_info h2{
+    margin-bottom: 20px;
+}
+.footer_info ul{
+     list-style-type:none; 
+}
+.iletisim li{
+    list-style-type:none; 
+}
+.about ,.iletisim{
+    width: 35%;
+}
 
+.link{
+    width: 25%;
+}
+.social-media{
+    margin-top: 20px;
+}
+.social-media ul{
+    display: flex;
+}
+.social-media ul li a{
+    /* display: inline-block; */
+    /* margin-right: 30px;
+    height: 30px;
+    padding-top: 12px;
+    background-color: transparent; */
+    border: #fff;
+    text-align: center;
+}
+.social-media ul li a:hover{
+background-color: #fff;
+color: #000;
+}
+.link ul li a{
+    text-decoration: none;
+    display: block;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+.link ul li a:hover{
+    color: #000;
+} 
+.iletisim ul li {
+    
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+ .iletisim ul li span {
+margin-right: 15px;
+text-decoration: none;
+}
+.copy-right{
+    padding: 15px 0;
+    text-align: center;
+    background-color: #fff;
+    
+}
+@media screen and (max-width:992px){
+    .about, .iletisim{
+        width: 35%;
+    }
+    .link{
+        width: 30%;
+    }
+}
+@media screen and (max-width:767px){
+    .about, .iletisim, .link{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .footer_info{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:350px){
+    .social-media ul li{
+    margin-right: 30px;
+    height: 30px;
+    }
+    
+}
 /* single html bunlar düzenlenecek global color single index vs olarak/ */
  
 #goBackNav{
