@@ -304,11 +304,11 @@
     </section>
 
     <section id="contact">
-        <div style="height: 4.5vw;"></div>
-        <div class="bordered-section text-center color-dark-blue py-2 " data-aos="fade-up">
+        <!-- <div style="height: 4.5vw;"></div> -->
+        <div class="bordered-section text-center py-2 " data-aos="fade-up">
             CONTACT
         </div>
-        <div id="form-wrap" class="position-relative">
+        <div hidden id="form-wrap" class="position-relative">
             <form class="bg-white position-relative overflow-hidden">
                 <p>HELLO JANE,</p>
                 <label for="email">Your Message:</label>
@@ -320,33 +320,63 @@
                  <input type="submit" name="submit" value="NOW, I SEND THANKS!">
             </form>
         </div>
-        <div id="form-wrap2" class="color-white">    
+        
+        <div id="form-wrap2" class="form2 color-white">    
             <form>
                 <p>HELLO JANE,</p>
                 <label for="email">Your Message:</label>
-                <textarea name="message" id="message" value="Your Message"></textarea>
+                <textarea name="message2" id="message2" value="Your Message"></textarea>
                 <label for="name">Name:</label>
-                <input type="text" name="name" value="" id="name">
+                <input type="text" name="name2" value="" id="name2">
                  <label for="email">Email:</label>
-                 <input type="text" name="email" value="" id="email">
-                 <input type="submit" name="submit" value="NOW, I SEND THANKS!">
+                 <input type="text" name="email2" value="" id="email2">
+                 <input type="submit" name="submit2" value="NOW, I SEND THANKS!">
             </form>
         </div>         
     </section>
-   
+   <article>
     <footer >
-        <div class="footer_info " >
-            <div class="footer_width ">
-              <div class="text-center">                  
-                      <a href="#"><i class="fab fa-facebook m-3"></i></a> 
-                      <a href="#"><i class="fab fa-instagram m-3"></i></a> 
-                      <a href="#"><i class="fab fa-twitter m-3"></i></a>
-                      <a href="#"><i class="fab fa-youtube m-3"></i></a> 
-              </div>
+    <div class="footer_info " >
+            <div class="footer_width about">
+                <h2>Links</h2>
+              <!-- <div class="social-media">  -->
+                  <ul>               
+                      <li><a href="#"><i class="fab fa-facebook m-3"  aria-label="facebook"></i></a></li> 
+                      <li><a aria-label="instagram" href="#"><i class="fab fa-instagram m-3"></i></a></li> 
+                      <li><a aria-label="twitter" href="#"><i class="fab fa-twitter m-3"></i></a></li>     
+                 </ul>  
+            <!-- </div> -->
+          </div>
+            <div class="footer_width link">
+               <h2>Quick Link</h2>
+               <ul>
+                   <li><a href="#">Ana Sayfa</a></li>
+                   <li><a href="#">Hakkında</a></li>
+                   <li><a href="#">Blog</a></li>
+                   <li><a href="#">İletişim</a></li>
+               </ul>
+            </div>
+            <div class="footer_width iletisim">
+               <h2>Contact</h2>
+               <lu>
+                   <li>
+                       <span><i class="far fa-envelope"></i></span>
+                       <a href="#">janedoe@gmail.com</a>
+                   </li>
+                   <li>
+                    <span><i class="fas fa-phone-volume"></i></span>
+                    <a href="#">000 0000 000</a>
+                   </li>
+               </lu>
             </div>
         </div>
+        <div class="copy-rigth text-center font-weight-light ">
+            <p>
+                0 COPYRIGHT 2021 JANE DONE ALL RİGHTS RESERVED
+            </p>
+       </div> 
     </footer>
-
+</article>
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
@@ -396,6 +426,11 @@
                 } // End if
             });
         });
+    </script>
+    <script>
+        function Sil(){
+            $('.form2').empty();
+        }
     </script>
 </body>
 </html>

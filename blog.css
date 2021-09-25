@@ -10,3 +10,24 @@
 #goBackNav a i:hover{
     color: rgba(0, 0, 0,0.4);
 }
+.project-additional-details{
+ padding-top: 20px;
+}
+.project-additional-details span {
+    display: block;
+    font-size: 95%;
+     /* padding: 15px 0;  */
+}
+
+
+.copyright{
+    border-top:1px solid #333 ;
+    padding: 20px;
+}
+.copyright ul li{
+    display: inline-block;
+    margin-left: 20px;
+}
+.copyright ul li a{
+    color: white;
+}
