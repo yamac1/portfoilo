@@ -7,6 +7,10 @@
 
 }
 
+#editor{
+    background-color: transparent;
+}
+
 #goBackNav a i:hover{
     color: rgba(0, 0, 0,0.4);
 }
@@ -30,4 +34,58 @@
 }
 .copyright ul li a{
     color: white;
+}
+
+#userPhoto {
+    font-size: 2rem;
+}
+
+textarea{
+    resize: none; 
+    border-color: rgba(0,0,0,.125) !important;   
+}
+
+#commentCollapse{
+    transition: .6s ease-in-out;
+}
+
+/* .card.bg-transparent .card-body{
+    background-color: black !important;
+} */
+
+/* @media screen and (min-width: 1200px){
+    .card-text{
+        font-size: 1.25rem;
+    }
+    #yorumlarH1, .card-header{
+        font-size: 1.5rem;
+    }
+    #commentHolder button,.card-title{
+        font-size: 1.5rem;
+    }
+} */
+
+@media screen and (max-width: 991px) {
+    #commentTextArea,.sub-textarea,.card-text{
+        font-size: .75rem;
+    }
+    #yorumlarH1, .card-header{
+        font-size: 1.25rem;
+    }
+    #commentHolder button,.card-title{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #commentTextArea,.sub-textarea,.card-text{
+        font-size: .65rem;
+        font-weight: 600;
+    }
+    #yorumlarH1, .card-header{
+        font-size: 1rem;
+    }
+    #commentHolder button,.card-title{
+        font-size: .75rem;
+    }
 }
