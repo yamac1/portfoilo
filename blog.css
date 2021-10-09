@@ -24,7 +24,7 @@
 }
 
 
-.copyright{
+/* .copyright{
     border-top:1px solid #333 ;
     padding: 20px;
 }
@@ -34,7 +34,7 @@
 }
 .copyright ul li a{
     color: white;
-}
+} */
 
 #userPhoto {
     font-size: 2rem;
@@ -42,7 +42,8 @@
 
 textarea{
     resize: none; 
-    border-color: rgba(0,0,0,.125) !important;   
+    /* border-color: rgba(0,0,0,.125) !important;    */
+    background-color:v var(--dark-blue) !important;
 }
 
 #commentCollapse{
@@ -88,4 +89,113 @@ textarea{
     #commentHolder button,.card-title{
         font-size: .75rem;
     }
+}
+.copyright{
+   
+    margin: 0 auto;
+    display: flex;
+    padding: 50px 0;
+     text-align: center; 
+    /* background-color:v var(--dark-blue) !important; */
+    background:var(--dark-blue);   
+    color: #fff;
+    width: 100%; 
+    grid-template-rows: auto 1fr auto;
+
+}
+
+.copyright .footer_width{
+    padding: 0 15px;
+}
+.copyright h2{
+    margin-bottom: 20px;
+}
+.copyright ul{
+     list-style-type:none; 
+}
+.iletisim li{
+    list-style-type:none; 
+}
+.about ,.iletisim{
+    width: 30%;
+}
+
+.link{
+    width: 25%;
+}
+.about{
+    margin-top: 15px;
+   
+}
+
+.about ul li a{
+    display: block; 
+    margin-right: 30px; 
+     height: 30px; 
+    background-color: transparent; 
+    text-align: center;
+}
+.about ul li a:hover{
+background-color: #fff;
+color: #000;
+}
+.link ul li a{
+    text-decoration: none;
+    display: block;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+.link ul li a:hover{
+    color: #000;
+} 
+.iletisim ul li {
+    
+    display: block;
+    align-items: center;
+    margin-bottom: 15px;
+}
+ .iletisim ul li span {
+margin-right: 15px;
+text-decoration: none;
+}
+.abc{
+    margin-left:25% ;
+    margin-right: 25%;
+    padding: 15px 0;
+    text-align: center; 
+    background:var(--dark-blue);   
+}
+
+@media screen and (max-width:992px){
+    .about, .iletisim{
+        width: 35%;
+    }
+    .link{
+        width: 30%;
+    }
+}
+@media screen and (max-width:767px){
+    .about, .iletisim, .link{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .footer_info{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:350px){
+    .social-media ul li{
+    margin-right: 30px;
+    height: 30px;
+    }
+    
+}
+
+@media screen and (max-width: 640px) {
+    .carousel-box{
+        width: 100% !important;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+        border-radius: 0px 0px !important;
+    } 
 }
