@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="adminc.css">
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Document</title>
+</head>
+
+<body class="bg-color-white">
+
+    <div class="row my-3 text-center justify-content-between mx-2">
+        <div class="bg-color-dark-blue rounded text-white col-md-3">
+            BLOG
+            <p>Blog Sayısı</p>
+            <a href="#" class="text-white"><i class="fas fa-plus"></i> yeni blog ekle</a>
+        </div>
+        <div class="bg-color-dark-blue rounded text-white col-md-3">
+            KULLANICILAR
+            <p>Kullanıcı Sayısı</p>
+            <a href="#" class="text-white"><i class="fas fa-user-edit"></i> Kullanıcıları Düzenle</a>
+        </div>
+        <div class="bg-color-dark-blue rounded text-white col-md-3">
+            YORUMLAR
+            <p>Yorum Sayısı</p>
+            <a href="#" class="text-white"><i class="fas fa-edit"></i> Yorumları Düzenle</a>
+        </div>
+    </div>
+    <div class="row my-3 text-center justify-content-between mx-2">
+
+        <table class="table col-md-3">
+            <thead class=" bg-color-light-blue text-white">
+                <tr>
+                    <th>Not Al</th>
+                    <th><i class="fas fa-plus" data-toggle="collapse" data-target="#commentCollapse"
+                            aria-expanded="false" aria-controls="commentCollapse"></i></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div id="commentHolder" class="container color-grey">
+                            <div class="collapse" id="commentCollapse">
+
+                                <form>
+                                    <div class="form-group">
+                                        <textarea class="form-control bg-transparent color-white" id="commentTextArea"
+                                            placeholder="yorum yap" rows="3"></textarea>
+                                    </div>
+                                <button id="sendBtn" type="button" class="btn btn-primary">Gönder</button>
+
+                                </form>
+
+                            </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-middle ">Bunu yap</td>
+                    <td><button type="button" class="btn bg-color-grey text-white">Sil</button></td>
+                </tr>
+                <tr>
+                    <td class="align-middle ">Şunu yap</td>
+                    <td><button type="button" class="btn bg-color-grey text-white">Sil</button></td>
+                </tr>
+            </tbody>
+
+        </table>
+
+        <table class="table col-md-3">
+            <thead class=" bg-color-light-blue text-white">
+                <tr>
+                    <th>En Çok Tıklanan Blog</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="align-middle ">Blog 1 <span class="badge bg-color-grey text-white">4</span></td>
+                </tr>
+                <tr>
+                    <td class="align-middle ">Blog 2 <span class="badge bg-color-grey text-white">4</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="table col-md-3">
+            <thead class=" bg-color-light-blue text-white">
+                <tr>
+                    <th>Son Olaylar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="align-middle ">İhsan Güldür yorum yaptı</td>
+                </tr>
+                <tr>
+                    <td class="align-middle ">Fatih yılmaz yorum yaptı</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

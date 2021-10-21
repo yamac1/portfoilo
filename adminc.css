@@ -1,0 +1,17 @@
+
+html {
+    font-size: .85rem;
+}
+
+a  {
+    text-decoration: none !important;
+}
+
+tr:nth-child(even) {
+    background-color: lightgray;
+  }
+
+
+  .fas.fa-plus {
+      cursor: pointer;
+  }
