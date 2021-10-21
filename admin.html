@@ -38,76 +38,35 @@
         </div>
     </div>
     <div class="row my-3 text-center justify-content-between mx-2">
+        <ul class="list-group col-md-3 pr-0">
+            <li class="list-group-item bg-color-light-blue text-white">Notlar <i class="fas fa-plus"
+                    data-toggle="collapse" data-target="#commentCollapse" aria-expanded="false"
+                    aria-controls="commentCollapse"></i>
+                    <div class="collapse" id="commentCollapse">
+                            <form>
+                                <div class="form-group">
+                                    <textarea class="form-control bg-transparent color-white" id="commentTextArea"
+                                        placeholder="not ekle" rows="3"></textarea>
+                                </div>
+                            </form>
+                            <button id="sendBtn" type="button" class="btn btn-primary">Ekle</button>
+                        
+                    </div></li>
+            <li class="list-group-item">Bunu yap <button type="button" class="btn bg-color-grey text-white">Sil</button></li>
+            <li class="list-group-item">Şunu yap <button type="button" class="btn bg-color-grey text-white">Sil</button></li>
+        </ul>
 
-        <table class="table col-md-3">
-            <thead class=" bg-color-light-blue text-white">
-                <tr>
-                    <th>Not Al</th>
-                    <th><i class="fas fa-plus" data-toggle="collapse" data-target="#commentCollapse"
-                            aria-expanded="false" aria-controls="commentCollapse"></i></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        <div id="commentHolder" class="container color-grey">
-                            <div class="collapse" id="commentCollapse">
+        <ul class="list-group col-md-3 pr-0">
+            <li class="list-group-item bg-color-light-blue text-white">En Çok Tıklanan Blog</li>
+            <li class="list-group-item">Blog 1 <span class="badge bg-color-grey text-white">4</span></li>
+            <li class="list-group-item">Blog 2 <span class="badge bg-color-grey text-white">4</span></li>
+        </ul>
 
-                                <form>
-                                    <div class="form-group">
-                                        <textarea class="form-control bg-transparent color-white" id="commentTextArea"
-                                            placeholder="yorum yap" rows="3"></textarea>
-                                    </div>
-                                <button id="sendBtn" type="button" class="btn btn-primary">Gönder</button>
-
-                                </form>
-
-                            </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="align-middle ">Bunu yap</td>
-                    <td><button type="button" class="btn bg-color-grey text-white">Sil</button></td>
-                </tr>
-                <tr>
-                    <td class="align-middle ">Şunu yap</td>
-                    <td><button type="button" class="btn bg-color-grey text-white">Sil</button></td>
-                </tr>
-            </tbody>
-
-        </table>
-
-        <table class="table col-md-3">
-            <thead class=" bg-color-light-blue text-white">
-                <tr>
-                    <th>En Çok Tıklanan Blog</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="align-middle ">Blog 1 <span class="badge bg-color-grey text-white">4</span></td>
-                </tr>
-                <tr>
-                    <td class="align-middle ">Blog 2 <span class="badge bg-color-grey text-white">4</span></td>
-                </tr>
-            </tbody>
-        </table>
-
-        <table class="table col-md-3">
-            <thead class=" bg-color-light-blue text-white">
-                <tr>
-                    <th>Son Olaylar</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="align-middle ">İhsan Güldür yorum yaptı</td>
-                </tr>
-                <tr>
-                    <td class="align-middle ">Fatih yılmaz yorum yaptı</td>
-                </tr>
-            </tbody>
-        </table>
+        <ul class="list-group col-md-3 pr-0">
+            <li class="list-group-item bg-color-light-blue text-white">Son Olaylar</li>
+            <li class="list-group-item">İhsan Güldür yorum yaptı </li>
+            <li class="list-group-item">Fatih yılmaz yorum yaptı</li>
+        </ul>
     </div>
 
     <!-- jQuery -->
