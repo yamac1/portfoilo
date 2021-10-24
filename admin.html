@@ -18,9 +18,57 @@
     <title>Document</title>
 </head>
 
-<body class="bg-color-white">
+<body class="bg-color-white"data-spy="scroll" data-target="#scrollspyNav" data-offset="2">
+    <header>
+        <nav class="navbar nav-pills navbar-expand-md navbar-dark fixed-top">
+            <a class="navbar-brand text-white" href="#home" aria-label="logo"><i class="fab fa-angrycreative"
+                    style="font-size:3.5vw; margin-left:40%;"></i></a>
+            <button class="navbar-toggler collapsed border-0" type="button" data-toggle="collapse"
+                data-target="#navbarSupport" aria-label="menu burger button">
+                <span class="d-block bg-color-white position-relative"> </span>
+                <span class="d-block bg-color-white position-relative"> </span>
+                <span class="d-block bg-color-white position-relative"> </span>
+            </button>
+           <!-- Default dropleft button -->
+           <div class="collapse navbar-collapse" id="navbarSupport" style="text-shadow: .5px .5px 3px black;">
+           <ul class="navbar-nav ml-auto">
+            <li class="dropdown px-4 nav-item">
+           <div class="btn-group dropleft">
+             <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="bell.svg">
+             </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Elif Deresoy adında yeni bir kullanıcı eklendi.</a>
+                <a class="dropdown-item" href="#">Kübra Gökçe adında yeni bir kullanıcı eklendi.</a>
+                
+            </div>
+          </div>
+  
+         <!-- Split dropleft button -->
+         <div class="btn-group">
+           <div class="btn-group dropleft" role="group">
+         <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="sr-only">Toggle Dropleft</span>
+         </button>
+       <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Çamay Duran size mesaj yolladı.</a>
+        <a class="dropdown-item" href="#">İhsan Güldür size mesaj yolladı.</a>
+        <a class="dropdown-item" href="#">Fatih Yılmaz size mesaj yolladı.</a>
+      </div>
+    </div>
+    <button type="button" class="btn btn-secondary " >
+        <img src="chat-right-dots.svg">
+    </button>
+  </div>
+            </li>
+           </ul>
+           </div>
+        </nav>
+    </header>
+    
+     
 
-    <div class="row my-3 text-center justify-content-between mx-2">
+    <div class="row my-3 text-center justify-content-between mx-2 mt-5 pt-lg-5 ">
         <div class="bg-color-dark-blue rounded text-white col-md-3">
             BLOG
             <p>Blog Sayısı</p>

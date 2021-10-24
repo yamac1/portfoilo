@@ -16,6 +16,7 @@ tr:nth-child(even) {
       cursor: pointer;
   }
 
+
   ::placeholder {
     color: white !important;
   }
@@ -23,3 +24,12 @@ tr:nth-child(even) {
   textarea {
       resize: none;
   }
+  header {
+    display:flex;
+    justify-content: flex-end;
+}
+.btn{
+  
+    background-color:#446FA0;
+    opacity: 0.5;
+}
