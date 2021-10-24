@@ -15,4 +15,17 @@ tr:nth-child(even) {
   .fas.fa-plus {
       cursor: pointer;
   }
+
+
+  ::placeholder {
+    color: white !important;
+  }
+  header {
+    display:flex;
+    justify-content: flex-end;
+}
+.btn{
   
+    background-color:#446FA0;
+    opacity: 0.5;
+}

@@ -18,7 +18,53 @@
     <title>Document</title>
 </head>
 
-<body class="bg-color-white">
+<body class="bg-color-white"data-spy="scroll" data-target="#scrollspyNav" data-offset="2">
+    <header>
+        <nav class="navbar nav-pills navbar-expand-md navbar-dark fixed-top">
+            <a class="navbar-brand text-white" href="#home" aria-label="logo"><i class="fab fa-angrycreative"
+                    style="font-size:3.5vw; margin-left:40%;"></i></a>
+            <button class="navbar-toggler collapsed border-0" type="button" data-toggle="collapse"
+                data-target="#navbarSupport" aria-label="menu burger button">
+                <span class="d-block bg-color-white position-relative"> </span>
+                <span class="d-block bg-color-white position-relative"> </span>
+                <span class="d-block bg-color-white position-relative"> </span>
+            </button>
+           <!-- Default dropleft button -->
+           <div class="collapse navbar-collapse" id="navbarSupport" style="text-shadow: .5px .5px 3px black;">
+           <ul class="navbar-nav ml-auto">
+            <li class="dropdown px-4 nav-item">
+           <div class="btn-group dropleft">
+             <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="bell.svg">
+             </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Elif Deresoy adında yeni bir kullanıcı eklendi.</a>
+                <a class="dropdown-item" href="#">Kübra Gökçe adında yeni bir kullanıcı eklendi.</a>
+                
+            </div>
+          </div>
+  
+         <!-- Split dropleft button -->
+         <div class="btn-group">
+           <div class="btn-group dropleft" role="group">
+         <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="sr-only">Toggle Dropleft</span>
+         </button>
+       <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Çamay Duran size mesaj yolladı.</a>
+        <a class="dropdown-item" href="#">İhsan Güldür size mesaj yolladı.</a>
+        <a class="dropdown-item" href="#">Fatih Yılmaz size mesaj yolladı.</a>
+      </div>
+    </div>
+    <button type="button" class="btn btn-secondary " >
+        <img src="chat-right-dots.svg">
+    </button>
+  </div>
+            </li>
+           </ul>
+           </div>
+        </nav>
+    </header>
     
      
 
@@ -40,76 +86,35 @@
         </div>
     </div>
     <div class="row my-3 text-center justify-content-between mx-2">
+        <ul class="list-group col-md-3 pr-0">
+            <li class="list-group-item bg-color-light-blue text-white">Notlar <i class="fas fa-plus"
+                    data-toggle="collapse" data-target="#commentCollapse" aria-expanded="false"
+                    aria-controls="commentCollapse"></i>
+                    <div class="collapse" id="commentCollapse">
+                            <form>
+                                <div class="form-group">
+                                    <textarea class="form-control bg-transparent color-white" id="commentTextArea"
+                                        placeholder="not ekle" rows="3"></textarea>
+                                </div>
+                            </form>
+                            <button id="sendBtn" type="button" class="btn btn-primary">Ekle</button>
+                        
+                    </div></li>
+            <li class="list-group-item">Bunu yap <button type="button" class="btn bg-color-grey text-white">Sil</button></li>
+            <li class="list-group-item">Şunu yap <button type="button" class="btn bg-color-grey text-white">Sil</button></li>
+        </ul>
 
-        <table class="table col-md-3">
-            <thead class=" bg-color-light-blue text-white">
-                <tr>
-                    <th>Not Al</th>
-                    <th><i class="fas fa-plus" data-toggle="collapse" data-target="#commentCollapse"
-                            aria-expanded="false" aria-controls="commentCollapse"></i></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        <div id="commentHolder" class="container color-grey">
-                            <div class="collapse" id="commentCollapse">
+        <ul class="list-group col-md-3 pr-0">
+            <li class="list-group-item bg-color-light-blue text-white">En Çok Tıklanan Blog</li>
+            <li class="list-group-item">Blog 1 <span class="badge bg-color-grey text-white">4</span></li>
+            <li class="list-group-item">Blog 2 <span class="badge bg-color-grey text-white">4</span></li>
+        </ul>
 
-                                <form>
-                                    <div class="form-group">
-                                        <textarea class="form-control bg-transparent color-white" id="commentTextArea"
-                                            placeholder="yorum yap" rows="3"></textarea>
-                                    </div>
-                                <button id="sendBtn" type="button" class="btn btn-primary">Gönder</button>
-
-                                </form>
-
-                            </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="align-middle ">Bunu yap</td>
-                    <td><button type="button" class="btn bg-color-grey text-white">Sil</button></td>
-                </tr>
-                <tr>
-                    <td class="align-middle ">Şunu yap</td>
-                    <td><button type="button" class="btn bg-color-grey text-white">Sil</button></td>
-                </tr>
-            </tbody>
-
-        </table>
-
-        <table class="table col-md-3">
-            <thead class=" bg-color-light-blue text-white">
-                <tr>
-                    <th>En Çok Tıklanan Blog</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="align-middle ">Blog 1 <span class="badge bg-color-grey text-white">4</span></td>
-                </tr>
-                <tr>
-                    <td class="align-middle ">Blog 2 <span class="badge bg-color-grey text-white">4</span></td>
-                </tr>
-            </tbody>
-        </table>
-
-        <table class="table col-md-3">
-            <thead class=" bg-color-light-blue text-white">
-                <tr>
-                    <th>Son Olaylar</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="align-middle ">İhsan Güldür yorum yaptı</td>
-                </tr>
-                <tr>
-                    <td class="align-middle ">Fatih yılmaz yorum yaptı</td>
-                </tr>
-            </tbody>
-        </table>
+        <ul class="list-group col-md-3 pr-0">
+            <li class="list-group-item bg-color-light-blue text-white">Son Olaylar</li>
+            <li class="list-group-item">İhsan Güldür yorum yaptı </li>
+            <li class="list-group-item">Fatih yılmaz yorum yaptı</li>
+        </ul>
     </div>
 
     <!-- jQuery -->
