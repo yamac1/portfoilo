@@ -20,10 +20,11 @@ tr:nth-child(even) {
   ::placeholder {
     color: white !important;
   }
-
+  
   textarea {
       resize: none;
   }
+  
   header {
     display:flex;
     justify-content: flex-end;

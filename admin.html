@@ -18,7 +18,7 @@
     <title>Document</title>
 </head>
 
-<body class="bg-color-white"data-spy="scroll" data-target="#scrollspyNav" data-offset="2">
+<body class="bg-color-white" data-spy="scroll" data-target="#scrollspyNav" data-offset="2">
     <header>
         <nav class="navbar nav-pills navbar-expand-md navbar-dark fixed-top">
             <a class="navbar-brand text-white" href="#home" aria-label="logo"><i class="fab fa-angrycreative"
@@ -29,44 +29,52 @@
                 <span class="d-block bg-color-white position-relative"> </span>
                 <span class="d-block bg-color-white position-relative"> </span>
             </button>
-           <!-- Default dropleft button -->
-           <div class="collapse navbar-collapse" id="navbarSupport" style="text-shadow: .5px .5px 3px black;">
-           <ul class="navbar-nav ml-auto">
-            <li class="dropdown px-4 nav-item">
-           <div class="btn-group dropleft">
-             <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <img src="bell.svg">
-             </button>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Elif Deresoy adında yeni bir kullanıcı eklendi.</a>
-                <a class="dropdown-item" href="#">Kübra Gökçe adında yeni bir kullanıcı eklendi.</a>
-                
+          
+            <div class="collapse navbar-collapse" id="navbarSupport" style="text-shadow: .5px .5px 3px black;">
+                <ul class="navbar-nav ml-auto">
+                    <li class="dropdown px-4 nav-item">
+                        <div class="btn-group">
+                            <div class="btn-group dropleft" role="group">
+                                <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    <span class="sr-only">Toggle Dropleft</span>
+                                    <!-- <img src="bell.svg"> -->
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Elif Deresoy adında yeni bir kullanıcı eklendi.</a>
+                                    <a class="dropdown-item" href="#">Kübra Gökçe adında yeni bir kullanıcı eklendi.</a>
+    
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-secondary ">
+                                <img src="bell.svg">
+                            </button>
+                        </div>
+                        
+
+                        <div class="btn-group">
+                            <div class="btn-group dropleft" role="group">
+                                <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="sr-only">Toggle Dropleft</span>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Çamay Duran size mesaj yolladı.</a>
+                                    <a class="dropdown-item" href="#">İhsan Güldür size mesaj yolladı.</a>
+                                    <a class="dropdown-item" href="#">Fatih Yılmaz size mesaj yolladı.</a>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-secondary ">
+                                <img src="chat-right-dots.svg">
+                            </button>
+                        </div>
+                    </li>
+                </ul>
             </div>
-          </div>
-  
-         <!-- Split dropleft button -->
-         <div class="btn-group">
-           <div class="btn-group dropleft" role="group">
-         <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <span class="sr-only">Toggle Dropleft</span>
-         </button>
-       <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Çamay Duran size mesaj yolladı.</a>
-        <a class="dropdown-item" href="#">İhsan Güldür size mesaj yolladı.</a>
-        <a class="dropdown-item" href="#">Fatih Yılmaz size mesaj yolladı.</a>
-      </div>
-    </div>
-    <button type="button" class="btn btn-secondary " >
-        <img src="chat-right-dots.svg">
-    </button>
-  </div>
-            </li>
-           </ul>
-           </div>
         </nav>
     </header>
-    
-     
+
+
 
     <div class="row my-3 text-center justify-content-between mx-2 mt-5 pt-lg-5 ">
         <div class="bg-color-dark-blue rounded text-white col-md-3">
@@ -90,18 +98,23 @@
             <li class="list-group-item bg-color-light-blue text-white">Notlar <i class="fas fa-plus"
                     data-toggle="collapse" data-target="#commentCollapse" aria-expanded="false"
                     aria-controls="commentCollapse"></i>
-                    <div class="collapse" id="commentCollapse">
-                            <form>
-                                <div class="form-group">
-                                    <textarea class="form-control bg-transparent color-white" id="notearea"
-                                        placeholder="not ekle" rows="3"></textarea>
-                                </div>
-                            </form>
-                            <button id="sendBtn" type="button" class="btn btn-primary">Ekle</button>
-                        
-                    </div></li>
-            <li class="list-group-item">Bunu yap <button type="button" class="btn bg-color-grey text-white">Sil</button></li>
-            <li class="list-group-item">Şunu yap <button type="button" class="btn bg-color-grey text-white">Sil</button></li>
+                <div class="collapse" id="commentCollapse">
+                    <form>
+                        <div class="form-group">
+                            <textarea class="form-control bg-transparent color-white" id="notearea"
+                                placeholder="not ekle" rows="3"></textarea>
+                        </div>
+                    </form>
+                    <button id="sendBtn" type="button" class="btn btn-primary">Ekle</button>
+
+                </div>
+            </li>
+            <li class="list-group-item">Bunu yap <button type="button"
+                    class="btn bg-color-grey text-white delete-button">Sil</button>
+            </li>
+            <li class="list-group-item">Şunu yap <button type="button"
+                    class="btn bg-color-grey text-white delete-button">Sil</button>
+            </li>
         </ul>
 
         <ul class="list-group col-md-3 pr-0">
@@ -127,7 +140,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-        <!-- js -->
+    <!-- js -->
     <script src="admin.js"></script>
 </body>
 
